@@ -6,6 +6,8 @@ import StoreItems from "../../utils/StoreItems";
 
 import Item from "../../components/Shop/Item";
 
+import Image from "next/image";
+
 import { CartContext } from "../../utils/CartContext.js";
 
 export const getServerSideProps = (ctx) => {
@@ -87,7 +89,7 @@ const slug = (props) => {
   return (
     <div className={styles.item}>
       <div className={styles.main}>
-        <img src={item.image} />
+        <Image src={item.image} alt={item.name} width={350} height={350} />
         <div className={styles.meta}>
           <h2>{item.name}</h2>
           <b>£{item.price.toFixed(2)}</b>
