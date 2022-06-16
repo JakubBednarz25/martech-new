@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import styles from "./Top.module.scss";
 
+import Image from "next/image";
+
 import Link from "next/link";
 
 // const slides = [
@@ -29,51 +31,13 @@ const Top = () => {
   // }, [activeSlide]);
   return (
     <div className={styles.top}>
-      {/* <div className={styles.carPartSearch}>
-        <h2>parts for specific car</h2>
-        <select>
-          <option>Make</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-        <select>
-          <option>Model</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-        <Link href="/shop">
-          <button>search</button>
-        </Link>
-      </div>
-      <div className={styles.slideShow}>
-        <div
-          style={{ transform: `translateX(-${transition}px)` }}
-          className={styles.wrapper}
-        >
-          {slides.map((slide) => (
-            <div key={slide.id} className={styles.slide}>
-              {slide.content}
-            </div>
-          ))}
-        </div>
-        <div className={styles.radios}>
-          {slides.map((radio) => (
-            <input
-              key={radio.id}
-              type="radio"
-              checked={activeSlide.id === radio.id}
-              onChange={(e) => {
-                console.log(e.target.checked);
-                if (e.target.checked) {
-                  setActiveSlide(radio);
-                }
-              }}
-            />
-          ))}
-        </div>
-      </div> */}
+      <Image
+        src="/home-bg-top.jpg"
+        alt="background image of air suspensions"
+        layout="fill"
+        objectFit="cover"
+        objectPosition="center"
+      />
     </div>
   );
 };

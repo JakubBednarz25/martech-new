@@ -1,10 +1,17 @@
+import Image from "next/image";
+
 import styles from "./Footer.module.scss";
 
 const Footer = () => {
   return (
     <>
       <footer className={styles.footer}>
-        <img src="/martech.png" />
+        <Image
+          src={"/martech.png"}
+          alt="martech logo"
+          width={325}
+          height={300}
+        />
         <div className={styles.companyInfo}>
           <div className={styles.column}>
             {/* <h3>Customer Services</h3>
