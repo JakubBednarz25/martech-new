@@ -22,6 +22,21 @@
       justify-content: flex-start;
       flex-direction: column;
       max-width: 700px;
+      .safetyB {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: -15px 0px 0px 0px;
+        p {
+          color: rgb(100, 100, 100);
+        }
+        img {
+          min-width: 25px !important;
+          width: 25px !important;
+          height: 25px !important;
+          margin: 5px !important;
+        }
+      }
       h2 {
         margin: 0px 0px 10px 0px;
       }

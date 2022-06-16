@@ -94,7 +94,10 @@ const slug = (props) => {
           <h2>{item.name}</h2>
           <b>£{item.price.toFixed(2)}</b>
           <b>Excl. Tax: £{(item.price * 0.8).toFixed(2)}</b>
-          <p>Air suspension with TUV SUD certified</p>
+          <div className={styles.safetyB}>
+            <p>Safety B Certified</p>
+            <img src="/safety-b.jpg" alt="safety b logo" />
+          </div>
           <h3>Shipping & delivery</h3>
           <p>at checkout</p>
           {item.customizations ? (

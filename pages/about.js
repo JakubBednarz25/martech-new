@@ -9,7 +9,7 @@ const about = () => {
     <div className={styles.aboutPage}>
       <div className={styles.historyInfo}>
         <div className={styles.historyInfoText}>
-          <h1>Humble beginnings</h1>
+          <h1>Our story</h1>
           <p>
             Mar-Tech Logistics Ltd was founded back in 2020. During the pandemic
             the company has grown substantially, both in our customer base and
@@ -73,8 +73,9 @@ const about = () => {
             />
           </svg>
           <p>
-            Our amazing customer service, satisfaction and product quality will
-            always make you want to come back.
+            Customer service and satisfaction is at the top of our priority
+            list, these 2 things along with our quality products will make you
+            want to come back for more.
           </p>
         </div>
         <div className={styles.card}>
@@ -105,10 +106,9 @@ const about = () => {
         <div className={styles.leftText}>
           <h1>Air Springs</h1>
           <p>
-            Our parts come from all over the world - from specialized
-            institutions which we later craft our air suspensions from. These
-            are very reputable organisations, one of them you may already know -
-            Rubena. Proper testing is carried out on our supply prior to
+            Our fine air spring rubbers come from the most known producer of
+            them in the world, Rubena, and the proper crafting is done inside
+            our warehouses. Proper testing is carried out on our supply prior to
             shipping, to ensure there are no faulty mistakes in our inventory.
             In this whole process, handling of the products is essential and you
             can count on us with it. We are certified to the industry level,
