@@ -5,6 +5,8 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 import styles from "../styles/Gallery.module.scss";
 
+import Image from "next/image";
+
 const gallery = () => {
   return (
     <div className={styles.galleryPage}>
@@ -18,7 +20,12 @@ const gallery = () => {
               20, 21,
             ].map((n) => (
               <a key={n} href={`/gallery/${n}.jpg`}>
-                <img src={`/gallery/${n}.jpg`} />
+                <Image
+                  src={`/gallery/${n}.jpg`}
+                  alt={`${n}-image`}
+                  width={300}
+                  height={250}
+                />
               </a>
             ))}
           </div>
