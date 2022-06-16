@@ -1,0 +1,90 @@
+.aboutPage {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 600px;
+  padding: 30px 20px 30px 20px;
+  margin: 50px 0px 100px 0px;
+  .imageInfoLarge {
+    width: 70vw;
+    max-width: 900px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .leftText {
+      max-width: 500px;
+      margin: 20px;
+      h1 {
+        margin: 0px 0px 10px 0px;
+      }
+      p {
+        color: rgb(84, 84, 84);
+        line-height: 25px;
+      }
+    }
+  }
+  .cardsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    flex-wrap: wrap;
+    margin: 50px 0px 50px 0px;
+    .card {
+      width: 250px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin: 25px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 2.3px 2px 3.3px rgba(0, 0, 0, 0.013),
+        5.4px 4.7px 7.7px rgba(0, 0, 0, 0.019),
+        9.7px 8.4px 13.8px rgba(0, 0, 0, 0.023),
+        16.1px 14px 23px rgba(0, 0, 0, 0.027),
+        26.5px 23px 37.8px rgba(0, 0, 0, 0.031),
+        46.2px 40.2px 66.1px rgba(0, 0, 0, 0.037),
+        100px 87px 143px rgba(0, 0, 0, 0.05);
+      svg {
+        width: 100px;
+        height: 100px;
+        margin: 0px 0px 5px 0px;
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .historyInfo {
+    width: 70vw;
+    max-width: 900px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .imagesContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      min-height: 350px;
+    }
+    .historyInfoText {
+      max-width: 500px;
+      margin: 20px;
+      h1 {
+        margin: 0px 0px 10px 0px;
+      }
+      p {
+        color: rgb(84, 84, 84);
+        line-height: 25px;
+      }
+    }
+  }
+}

@@ -28,11 +28,11 @@ const headerLinks = [
     name: "Certificates",
     to: "/certificates",
   },
-  // {
-  //   id: 5,
-  //   name: "Contact Us",
-  //   to: "/",
-  // },
+  {
+    id: 5,
+    name: "About",
+    to: "/about",
+  },
 ];
 
 const Header = () => {
