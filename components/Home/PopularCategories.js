@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useContext } from "react";
 import styles from "./PopularCategories.module.scss";
 
+import Image from "next/image";
+
 import { ItemsContext } from "../../utils/ItemsContext";
 const categories = [
   // {
@@ -13,8 +15,7 @@ const categories = [
   {
     id: 2,
     name: "pneumatic-system",
-    image:
-      "https://i0.wp.com/carramba.co.uk/wp-content/uploads/headlights.jpeg?resize=800%2C556&ssl=1",
+    image: "/headlights.PNG",
   },
   // {
   //   id: 3,
@@ -40,7 +41,12 @@ const PopularCategories = () => {
         {categories.map((category) => {
           return (
             <div key={category.id} className={styles.category}>
-              <img src={category.image} />
+              <Image
+                src={category.image}
+                alt={category.name}
+                width={250}
+                height={200}
+              />
               <Link href={`/shop/${category.name}`}>
                 <button className="redHover">{category.name}</button>
               </Link>
