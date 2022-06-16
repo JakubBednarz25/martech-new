@@ -1,0 +1,20 @@
+@use "./partials/_theme";
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.redHover:hover {
+  transition-duration: 0.25s;
+  background-color: theme.$red !important;
+}
+
+.page {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px 0px 10px 0px;
+}

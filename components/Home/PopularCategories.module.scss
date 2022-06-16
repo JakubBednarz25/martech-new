@@ -1,0 +1,43 @@
+@use "../../styles/partials/_theme";
+
+.popularCategories {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+  h2 {
+    font-size: 32px;
+    color: theme.$red;
+  }
+  p {
+    color: theme.$gray;
+  }
+  .wrapper {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .category {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      max-width: 225px;
+      margin: 20px;
+      border: 1px solid rgb(179, 179, 179);
+      padding: 20px;
+      button {
+        padding: 10px 20px 10px 20px;
+        background-color: #000;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin: 40px 0px 0px 0px;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

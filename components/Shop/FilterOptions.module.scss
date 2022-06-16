@@ -1,0 +1,25 @@
+.filters {
+  background-color: rgba(216, 216, 216, 0.411);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 20px 0px 45px 0px;
+  select {
+    width: 250px;
+    height: 40px;
+    padding: 0px 0px 0px 15px;
+    font-size: 18px;
+    text-transform: capitalize;
+    background-color: #fff;
+    border: none;
+    option {
+      text-transform: capitalize;
+    }
+  }
+  p {
+    font-size: 18px;
+    padding: 10px;
+  }
+}

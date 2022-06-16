@@ -1,0 +1,136 @@
+@use "../styles/partials/_theme";
+
+.emptyCart,
+.cartPage {
+  button {
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+
+.emptyCart {
+  padding: 0px 0px 0px 20px;
+  margin: 35px 0px 75px 0px;
+  p {
+    border: 1px solid theme.$red;
+    padding: 15px 20px 15px 20px;
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+.cartPage {
+  margin: 60px 0px 45px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  .tableContainer {
+    margin: 0px 0px 65px 0px;
+    table {
+      th {
+        background-color: rgb(231, 231, 231);
+      }
+      td,
+      th {
+        padding: 10px 15px 10px 15px;
+      }
+      input {
+        padding: 10px;
+        width: 64px;
+      }
+      label {
+        background-color: rgb(74, 74, 74);
+        padding: 1px 6px 1px 6px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+      }
+      label:hover {
+        transition-duration: 0.25s;
+        cursor: pointer;
+        background-color: theme.$red;
+      }
+      img {
+        max-width: 150px;
+      }
+    }
+    table,
+    th,
+    td {
+      border: 1px solid rgb(185, 185, 185);
+      border-collapse: collapse;
+    }
+  }
+  .subtotal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0px 35px 60px 35px;
+    min-width: 300px;
+    div:nth-child(2) {
+      margin: 15px 0px 0px 0px;
+      border-bottom: none;
+    }
+    div:nth-child(3) {
+      margin: 0px 0px 5px 0px;
+    }
+    div {
+      display: flex;
+      width: 100%;
+      border: 1px solid rgb(185, 185, 185);
+      h3 {
+        padding: 5px 15px 5px 15px;
+      }
+      h3:nth-child(1) {
+        padding: 5px 50px 5px 15px;
+        background-color: rgb(231, 231, 231);
+        border-right: 1px solid rgb(185, 185, 185);
+        width: 100px;
+      }
+    }
+    i {
+      color: gray;
+      text-decoration: italic;
+    }
+    button {
+      margin: 25px 0px 0px 0px;
+    }
+    .info {
+      margin: 5px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      border: none;
+      i {
+        margin: 2px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .cartPage {
+    .tableContainer {
+      width: 80vw;
+      overflow-x: scroll;
+      table {
+        img {
+          max-width: 45px;
+        }
+        td {
+          font-size: 15px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

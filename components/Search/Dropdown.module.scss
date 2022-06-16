@@ -1,0 +1,64 @@
+@use "../../styles/partials/_theme";
+
+.dropdown {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -890px;
+  width: 80%;
+  -webkit-box-shadow: 0px 7px 17px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 7px 17px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  color: #000;
+  height: 600px;
+  z-index: 15;
+  margin: 20px 0px 0px 0px;
+  cursor: default;
+  .nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 0.3;
+    background-color: rgb(240, 240, 240);
+    list-style-type: none;
+    padding: 20px 0px 10px 0px;
+
+    li {
+      text-align: left;
+      padding: 5px 30px 5px 30px;
+      cursor: pointer;
+    }
+    li:hover {
+      transition-duration: 0.25s;
+      background-color: #fff;
+      color: theme.$red;
+    }
+    .selected {
+      background-color: #fff;
+      color: theme.$red;
+    }
+  }
+  .links {
+    flex: 0.7;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: #fff;
+    ul {
+      max-width: 200px;
+      text-align: center;
+      padding: 10px;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 15px;
+      }
+    }
+    ul:hover {
+      transition-duration: 0.25s;
+      color: theme.$red;
+      cursor: pointer;
+    }
+  }
+}

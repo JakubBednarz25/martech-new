@@ -1,0 +1,15 @@
+.FourOFourContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 750px;
+
+  p {
+    margin: 10px 0px 0px 0px;
+    color: rgb(105, 105, 105);
+    a {
+      font-size: 18px;
+    }
+  }
+}

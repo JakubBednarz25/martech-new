@@ -1,0 +1,23 @@
+@use "../../styles/partials/_theme";
+
+.popularProducts {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 50px 0px 0px 0px;
+  h2 {
+    font-size: 32px;
+    color: theme.$red;
+  }
+  p {
+    color: theme.$gray;
+  }
+  .wrapper {
+    margin: 30px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

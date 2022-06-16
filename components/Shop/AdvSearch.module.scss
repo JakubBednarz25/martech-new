@@ -1,0 +1,61 @@
+@use "../../styles/partials/_theme";
+
+.advSearch {
+  background-color: theme.$red;
+  margin: 50px 0px 0px 0px;
+  h3 {
+    padding: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: darken(theme.$red, 15);
+    span {
+      color: rgb(158, 158, 223);
+    }
+  }
+  div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 15px;
+    select,
+    button {
+      height: 50px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    select {
+      margin: 0px 0px 10px 0px;
+      padding: 0px 0px 0px 15px;
+      font-size: 18px;
+    }
+
+    button {
+      text-transform: uppercase;
+      background-color: #000;
+      color: #fff;
+      cursor: pointer;
+      border: 1px solid #000;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .advSearch {
+    div {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .advSearch {
+    select,
+    button {
+      margin: 5px !important;
+      flex: 0.33;
+    }
+  }
+}
