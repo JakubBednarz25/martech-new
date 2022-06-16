@@ -3,6 +3,8 @@ import styles from "./Header.module.scss";
 import Search from "../Search/Search";
 import Link from "next/link";
 
+import Image from "next/image";
+
 import { CartContext } from "../../utils/CartContext";
 
 const headerLinks = [
@@ -121,7 +123,12 @@ const Header = () => {
       </div>
       <header className={styles.header}>
         <Link href="/">
-          <img src="/martechlogo.jpg" />
+          <Image
+            src={"/martechlogo.jpg"}
+            alt="martech logo"
+            width={75}
+            height={75}
+          />
         </Link>
         <nav className={styles.mobileMenu}>
           {mobileMenuOpen && (
