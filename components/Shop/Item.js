@@ -3,6 +3,8 @@ import { useState, useEffect, useContext } from "react";
 import styles from "./Item.module.scss";
 import Link from "next/link";
 
+import Image from "next/image";
+
 import { CartContext } from "../../utils/CartContext";
 
 const Item = ({ data, large }) => {
@@ -39,7 +41,7 @@ const Item = ({ data, large }) => {
   if (large) {
     return (
       <div className={styles.itemLarge}>
-        <img src={data.image} />
+        <Image src={data.image} alt={data.name} width={300} height={225} />
         <hr />
         <Link href={`/item/${data.slug}`}>
           <h3>{data.name}</h3>
@@ -72,7 +74,7 @@ const Item = ({ data, large }) => {
   }
   return (
     <div className={styles.itemSmall}>
-      <img src={data.image} />
+      <Image src={data.image} alt={data.name} width={300} height={250} />
       <div className={styles.itemInfo}>
         <Link href={`/item/${data.slug}`}>
           <h3>{data.name}</h3>
