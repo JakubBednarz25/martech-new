@@ -123,7 +123,10 @@ const Header = () => {
         </ul>
       </div>
       <div className={`${styles.contactInfo} ${styles.fittingInfo}`}>
-        <p>In store fitting available at our new garage! Unit C10, Boston Trade Park, PE21 9HG</p>
+        <p>
+          In store fitting available at our new open Workshop! Contact for more
+          details.
+        </p>
       </div>
       <header className={styles.header}>
         <Link href="/">
