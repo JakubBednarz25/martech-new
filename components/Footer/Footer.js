@@ -27,9 +27,9 @@ const Footer = () => {
             <h3>Contacts</h3>
             <h2>Registered Address:</h2>
             <p>MAR-TECH LOGISTICS LTD</p>
-            <p> 4 Deridene Close</p>
-            <p>Staines-upon-Thames, Stanwell</p>
-            <p>TW19 7LS, UK</p>
+            <p>Unit C10, Boston Trade Park</p>
+            <p>Boston, Lincolnshire</p>
+            <p>PE21 9HG, UK</p>
             <h2>phone</h2>
             <p>07715129997</p>
             <h2>email:</h2>

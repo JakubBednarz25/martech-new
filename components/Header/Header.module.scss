@@ -81,6 +81,14 @@
   }
 }
 
+.fittingInfo {
+  padding:10px 40px 10px 40px;
+  background-color: rgb(103, 7, 7);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
 .header {
   width: 100%;
   display: flex;
@@ -209,5 +217,14 @@
   }
   .contactInfo {
     display: none;
+  }
+  .fittingInfo{
+    display:flex;
+    flex-wrap:wrap;
+    // padding:5px;
+    padding:0px;
+    font-size:16px;
+    padding:10px;
+    text-align:center;
   }
 }

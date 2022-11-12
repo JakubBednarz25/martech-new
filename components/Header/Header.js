@@ -69,7 +69,8 @@ const Header = () => {
                 fill="currentColor"
               />
             </svg>
-            4 Deridene Close, Staines
+            {/* 4 Deridene Close, Staines */}
+            Unit C10, Boston Trade Park
           </li>
           <li>
             <svg
@@ -120,6 +121,9 @@ const Header = () => {
             Mon - Fri/9:00 AM - 5:00 PM
           </li>
         </ul>
+      </div>
+      <div className={`${styles.contactInfo} ${styles.fittingInfo}`}>
+        <p>In store fitting available at our new garage! Unit C10, Boston Trade Park, PE21 9HG</p>
       </div>
       <header className={styles.header}>
         <Link href="/">
